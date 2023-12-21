@@ -15,5 +15,3 @@ mail:
         auth: true
         starttls:
           enable: true
-graphql:
-  path: /api/university-service/graphql
