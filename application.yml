@@ -1,6 +1,3 @@
-spring:
-  application:
-
  data:
    mongodb:
      uri: mongodb+srv://jamici:jamici@jamici.ioxz3hb.mongodb.net/?retryWrites=true&w=majority
