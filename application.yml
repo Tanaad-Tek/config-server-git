@@ -1,18 +1,17 @@
-spring:
- data:
-   mongodb:
-     uri: mongodb+srv://jamici:jamici@jamici.ioxz3hb.mongodb.net/?retryWrites=true&w=majority
-     database: jamici
-     port: 27017
-     host: serverlessinstance0.60aj1q0.mongodb.net
- mail:
-   host: smtp.gmail.com
-   port: 587
-   username: shiineali1@gmail.com
-   password: tialgncepxgjqexf
-   properties:
-     mail:
-       smtp:
-         auth: true
-         starttls:
-           enable: true
+microservice:
+  database:
+    uri: mongodb+srv://jamici:jamici@localhost:27017/jamici?retryWrites=true&w=majority
+    database: jamici
+    port: 27017
+    host: serverlessinstance0.60aj1q0.mongodb.net
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: shiineali1@gmail.com
+    password: tialgncepxgjqexf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
