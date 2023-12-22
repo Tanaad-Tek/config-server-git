@@ -16,8 +16,44 @@ spring:
           auth: true
           starttls:
             enable: true
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+
+      routes:
+        - id: student-service
+          uri: lb://STUDENT-SERVICE
+          predicates:
+            - Path=/graphql
+        - id: university-service
+#          uri: https://university-service-a7b11fc7e926.herokuapp.com
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/university-service/graphql
+        - id: nche-service
+#          uri: https://nche-service-8eceff6bb0f1.herokuapp.com
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/nche-service/graphql
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    gateway:
+      enabled: true
 
 
 graphiql:
   cdn:
     enabled: true
+
