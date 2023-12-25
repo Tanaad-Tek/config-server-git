@@ -56,3 +56,9 @@ graphiql:
   cdn:
     enabled: true
 
+edahab:
+  payment:
+    apiKey: gMhEEIEVNv3fEHG13zkm7dxow2VARE05EirxzhdJJ
+    secretKey: FcGdla9Np0b5bI6Z4npRUEZt7tINfrKoZkIvA5
+    agentCode: 725745
+    returnUrl: https://www.google.com
