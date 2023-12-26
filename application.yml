@@ -38,6 +38,11 @@ spring:
           uri: http://localhost:8081
           predicates:
             - Path=/api/nche-service/graphql
+        - id: payment-service
+#          uri: https://nche-service-8eceff6bb0f1.herokuapp.com
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/v1/payment
 
 
 management:
