@@ -28,20 +28,32 @@ spring:
           uri: http://localhost:8083
           predicates:
             - Path=/api/student-service/graphql
+          filters:
+           - AuthenticationFilter
+           
         - id: university-service
 #          uri: https://university-service-a7b11fc7e926.herokuapp.com
           uri: http://localhost:8082
           predicates:
             - Path=/api/university-service/graphql
+          filters:
+           - AuthenticationFilter
+           
         - id: nche-service
 #          uri: https://nche-service-8eceff6bb0f1.herokuapp.com
           uri: http://localhost:8081
           predicates:
             - Path=/api/nche-service/graphql
+          filters:
+           - AuthenticationFilter
+           
         - id: payment-service
           uri: http://localhost:8084
           predicates:
             - Path=/api/v1/payment/**
+          filters:
+           - AuthenticationFilter
+           
         - id: identity-service
           uri: http://localhost:8085
           predicates:
