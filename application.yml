@@ -83,4 +83,4 @@ edahab:
     agentCode: 725745
     returnUrl: https://www.google.com
 jwt:
-  secret: meMvpZuhqNFfCNG2aPm6S3OZjzyCYXqFUehMKu2uDNgZMYzKEhHruJe13gzxXuprns0cpUkDXdey81B5qvol34yqBgtYS81PcQhQ
+  secret: ${{ secrets.JWT_SECRET }}
