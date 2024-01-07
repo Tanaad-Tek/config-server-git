@@ -56,7 +56,8 @@ spring:
            - AuthenticationFilter
            
         - id: identity-service
-          uri: http://localhost:8085
+          # uri: http://localhost:8085
+          uri: https://identity-service-12968c326ac9.herokuapp.com
           predicates:
             - Path=/identity/**
 
