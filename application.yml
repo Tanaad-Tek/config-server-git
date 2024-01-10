@@ -18,6 +18,14 @@ spring:
             enable: true
   cloud:
     gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+            - POST
+            - GET
+            - PUT
       discovery:
         locator:
           enabled: true
