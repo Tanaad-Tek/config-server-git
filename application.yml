@@ -29,14 +29,6 @@ spring:
           uri: https://student-service-8a45975e4725.herokuapp.com
           predicates:
             - Path=/api/student-service/graphql
-          metadata:
-            cors
-              allowedOrigins: '*'
-              allowedMethods:
-                - GET
-                - POST
-              allowedHeaders: '*'
-              maxAge: 30
           filters:
            - AuthenticationFilter
            
@@ -45,14 +37,6 @@ spring:
           uri: http://localhost:8082
           predicates:
             - Path=/api/university-service/graphql
-          metadata:
-            cors
-              allowedOrigins: '*'
-              allowedMethods:
-                - GET
-                - POST
-              allowedHeaders: '*'
-              maxAge: 30
           filters:
            - AuthenticationFilter
            
@@ -76,14 +60,6 @@ spring:
           uri: https://identity-service-12968c326ac9.herokuapp.com
           predicates:
             - Path=/identity/**
-          metadata:
-            cors
-              allowedOrigins: '*'
-              allowedMethods:
-                - GET
-                - POST
-              allowedHeaders: '*'
-              maxAge: 30
 
 
 management:
