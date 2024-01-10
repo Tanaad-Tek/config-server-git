@@ -76,6 +76,14 @@ spring:
           uri: https://identity-service-12968c326ac9.herokuapp.com
           predicates:
             - Path=/identity/**
+          metadata:
+            cors
+              allowedOrigins: '*'
+              allowedMethods:
+                - GET
+                - POST
+              allowedHeaders: '*'
+              maxAge: 30
 
 
 management:
