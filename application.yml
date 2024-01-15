@@ -25,6 +25,7 @@ spring:
             allowedHeaders: "*"
             allowedMethods:
               - POST
+              - GET
       discovery:
         locator:
           enabled: true
