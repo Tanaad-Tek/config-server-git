@@ -57,7 +57,7 @@ spring:
            - AuthenticationFilter
            
         - id: payment-service
-          uri: http://localhost:8084
+          uri: https://payment-service-app-b2edcbbf6894.herokuapp.com/
           predicates:
             - Path=/api/v1/payment/**
           filters:
