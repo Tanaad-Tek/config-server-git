@@ -97,3 +97,5 @@ jwt:
 api:
   key: 58c152d73fff7c85bb2ed325accdb325
   secret: e278484e7cbf649c85cd3dde01f6d73d626a523d0931c7367789e2579af8748e
+amount:
+  value: 1000
