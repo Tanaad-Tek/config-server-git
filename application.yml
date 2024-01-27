@@ -74,6 +74,8 @@ spring:
           uri: https://slnecb-app-4ba6dee7cde8.herokuapp.com/
           predicates:
             - Path=/slnecb/**
+          filters:
+           - AuthenticationFilter
 
 
 management:
