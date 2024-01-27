@@ -73,7 +73,7 @@ spring:
           # uri: http://localhost:8087
           uri: https://slnecb-app-4ba6dee7cde8.herokuapp.com/
           predicates:
-            - Path=/slnecb/**
+            - Path=/api/slnecb/**
           filters:
            - AuthenticationFilter
 
