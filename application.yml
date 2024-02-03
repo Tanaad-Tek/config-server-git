@@ -7,7 +7,7 @@ spring:
       host: serverlessinstance0.60aj1q0.mongodb.net
   mail:
     host: smtp.office365.com
-    port: 465
+    port: 587
     username: mig7690@jaamici.com
     password: Ugaas123@@@
     properties:
