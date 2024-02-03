@@ -16,6 +16,8 @@ spring:
           auth: true
           starttls:
             enable: false
+          ssl:
+            enable: false
   cloud:
     gateway:
       globalcors:
