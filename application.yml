@@ -15,9 +15,8 @@ spring:
         smtp:
           auth: true
           starttls:
-            enable: true
-          ssl:
-            enable: true
+            enable: false
+
   cloud:
     gateway:
       globalcors:
