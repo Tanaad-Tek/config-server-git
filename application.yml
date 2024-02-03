@@ -6,16 +6,16 @@ spring:
       port: 27017
       host: serverlessinstance0.60aj1q0.mongodb.net
   mail:
-    host: smtp.office365.com
+    host: smtp.gmail.com
     port: 587
-    username: mig7690@jaamici.com
-    password: Ugaas123@@@
+    username: shiineali1@gmail.com
+    password: tialgncepxgjqexf
     properties:
       mail:
         smtp:
           auth: true
           starttls:
-            enable: false
+            enable: true
 
   cloud:
     gateway:
