@@ -50,8 +50,7 @@ spring:
            - AuthenticationFilter
            
         - id: nche-service
-#          uri: https://nche-service-8eceff6bb0f1.herokuapp.com
-          uri: http://localhost:8081
+          uri: https://university-service-a7b11fc7e926.herokuapp.com
           predicates:
             - Path=/api/nche-service/graphql
           filters:
