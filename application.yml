@@ -43,14 +43,15 @@ spring:
            
         - id: university-service
 #          uri: https://university-service-a7b11fc7e926.herokuapp.com
-          uri: http://localhost:8082
+          uri: https://university-service-a7b11fc7e926.herokuapp.com
           predicates:
             - Path=/api/university-service/graphql
           filters:
            - AuthenticationFilter
            
         - id: nche-service
-          uri: https://university-service-a7b11fc7e926.herokuapp.com
+          # uri: https://university-service-a7b11fc7e926.herokuapp.com
+          uri: http://localhost:8081
           predicates:
             - Path=/api/nche-service/graphql
           filters:
