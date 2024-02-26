@@ -46,6 +46,7 @@ spring:
           uri: https://university-service-a7b11fc7e926.herokuapp.com
           predicates:
             - Path=/api/university-service/graphql
+            - Path=/api/files/**
           filters:
            - AuthenticationFilter
            
