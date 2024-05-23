@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://jamici:jamici@jamici.ioxz3hb.mongodb.net/?retryWrites=true&w=majority&connectTimeoutMS=300000&minPoolSize=0&maxPoolSize=10&maxIdleTimeMS=900000
+      uri: mongodb+srv://jamici:jamici@jamici.ioxz3hb.mongodb.net/?retryWrites=true&w=majority
       database: jamici
       port: 27017
       host: serverlessinstance0.60aj1q0.mongodb.net
