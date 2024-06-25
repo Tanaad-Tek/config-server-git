@@ -41,7 +41,7 @@ spring:
           # uri: http://localhost:8083
           uri: https://student-service-8a45975e4725.herokuapp.com
           predicates:
-            - Path=/api/student-service/graphql, /api/files/**
+            - Path=/api/student-service/graphql, /api/files/**,/api/images/**
           filters:
            - AuthenticationFilter
            
