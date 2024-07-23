@@ -5,6 +5,9 @@ spring:
       database: jamici
       port: 27017
       host: serverlessinstance0.60aj1q0.mongodb.net
+  graphql:
+    graphiql:
+      enabled: true
   mail:
     host: smtp-mail.outlook.com
     port: 587
