@@ -74,7 +74,7 @@ spring:
           # uri: http://localhost:8085
           uri: https://identity-service-12968c326ac9.herokuapp.com
           predicates:
-            - Path=/identity/**,/api/**
+            - Path=/identity/**
                        
         - id: slnecb-service
           # uri: http://localhost:8087
