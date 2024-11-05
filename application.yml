@@ -9,6 +9,7 @@ spring:
     graphiql:
       enabled: true
   mail:
+    jndi-name: "mail/Session"
     host: smtp-mail.outlook.com
     port: 587
     username: noreply@jaamici.com
@@ -17,6 +18,9 @@ spring:
       mail:
         smtp:
           auth: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
           starttls:
             enable: true
         store:
