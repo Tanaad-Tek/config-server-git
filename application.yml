@@ -25,6 +25,9 @@ spring:
             enable: true
         store:
           protocol: pop3
+eureka:
+  client:
+    service-url.default-zone: https://service-registry-app-221b856933a2.herokuapp.com
 
   cloud:
     gateway:
@@ -87,7 +90,15 @@ spring:
             - Path=/api/slnecb/**
           filters:
            - AuthenticationFilter
+    config:
+      import-check:
+        enable: false
 
+
+server:
+  ribbon:
+    eureka:
+      enabled: true
 
 management:
   endpoints:
