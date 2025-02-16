@@ -27,7 +27,8 @@ spring:
           protocol: pop3
 eureka:
   client:
-    service-url.default-zone: https://service-registry-app-221b856933a2.herokuapp.com
+    service-url:
+      default-zone: https://service-registry-app-221b856933a2.herokuapp.com
 
   cloud:
     gateway:
