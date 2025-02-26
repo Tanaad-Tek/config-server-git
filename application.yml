@@ -25,11 +25,6 @@ spring:
             enable: true
         store:
           protocol: pop3
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: https://service-registry-app-221b856933a2.herokuapp.com
-
 
   cloud:
     gateway:
